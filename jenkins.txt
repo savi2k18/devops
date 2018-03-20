@@ -1,0 +1,53 @@
+ec2-user:~/environment/devops (master) $ cd ..
+ec2-user:~/environment $ ls
+aws.pem  devops  README.md
+ec2-user:~/environment $ cd ..
+ec2-user:~ $ ls
+environment
+ec2-user:~ $ cd environment/
+ec2-user:~/environment $ ls
+aws.pem  devops  README.md
+ec2-user:~/environment $ sudo chmod 400 aws.pem 
+ec2-user:~/environment $ ssh -i aws.pem ec2-18-218-161-71.us-east-2.compute.amazonaws.com
+The authenticity of host 'ec2-18-218-161-71.us-east-2.compute.amazonaws.com (172.31.38.29)' can't be established.
+ECDSA key fingerprint is SHA256:OVEmmgNY1pkngUAq1xwOMSGCl4zIWVtCCkuR5N1gf20.
+ECDSA key fingerprint is MD5:a4:b7:8f:eb:23:e4:52:74:91:13:2f:89:e6:16:87:a5.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ec2-18-218-161-71.us-east-2.compute.amazonaws.com,172.31.38.29' (ECDSA) to the list of known hosts.
+[ec2-user@ip-172-31-38-29 
+
+[ec2-user@ip-172-31-38-29 ~]$ history
+    1  sudo yum -y install java-1.8.0-openjdk.x86_64
+    2  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+    3  sudo yum install -y wget
+    4  clear
+    5  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+    6  cat /etc/yum.repos.d/jenkins.repo
+    7  sudo rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+    8  sudo rpm -import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+    9  sudo rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+   10  sudo yum -y install jenkins
+   sudo systemctl start jenkins
+   13  sudo systemctl enable jenkins
+   14  ps -ef|grep "jenkins"
+   
+   configuration of jenkins
+   inatsll the utilities on jenkins server
+   make utility to run by jenkins user
+   install the plugins if available
+   configure the pluginsuse the plugin in the job
+   plugin un available call the shell script to do the task
+   ssh
+   22  which ssh
+   23  which git
+   24  which bash
+   25  sudo yum -y install java-1.8.0-openjdk-devel
+   26  history
+    sudo yum -y install java-1.8.0-openjdk-devel
+   26  history
+   27  wget http://redrockdigimark.com/apachemirror/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.tar.gz
+   28  tar -zxvf apache-maven-3.5.3-bin.tar.gz 
+   29  ls
+   30  sudo mv apache-maven-3.5.3 /usr/local/bin/
+[ec2-user@ip-172-31-38-29 ~]$ 
+   
